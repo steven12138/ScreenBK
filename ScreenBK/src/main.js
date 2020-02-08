@@ -10,6 +10,9 @@ import Axios from 'axios'
 Vue.prototype.$axios=Axios;
 Vue.use(ElementUI)
 Vue.config.productionTip = false
+Vue.prototype.$goRoute=function(index){
+  this.$router.push(index)
+}
 
 /* eslint-disable no-new */
 new Vue({
