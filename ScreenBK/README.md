@@ -1,6 +1,6 @@
 # screenbk
 
-> screen ui backstage
+> A Vue.js project
 
 ## Build Setup
 
