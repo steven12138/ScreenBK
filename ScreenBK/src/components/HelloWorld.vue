@@ -81,6 +81,8 @@
         </a>
       </li>
     </ul>
+    <el-button type="primary" @click="return_about" icon="el-icon-d-arrow-left">返回</el-button>
+    
   </div>
 </template>
 
@@ -91,7 +93,12 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  }
+  },
+  methods: {
+    return_about(){
+      this.$router.push('/About')
+    }
+  },
 }
 </script>
 

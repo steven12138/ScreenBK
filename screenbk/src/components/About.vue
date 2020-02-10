@@ -3,12 +3,14 @@
         
     <img src="./assets/logo.png">
     <h1>{{msg}}</h1>
-    <!-- <el-button type="primary" @click="tovue">Powered By Vue</el-button> -->
-    <p @click="tovue" >test</p>
+    
+    <router-link to="/">
+        <el-button icon="el-icon-d-arrow-left">back</el-button>
+    </router-link>
+    <el-button type="primary" @click="tovue">Powered By Vue</el-button>
     </div>
 </template>
 <script>
-import router from './router'
 export default {
     data(){
         return{
@@ -18,7 +20,7 @@ export default {
     methods: {
         tovue(){
             console.log('get')
-            router.push('/vue')
+            this.$router.push('/vue')
         }
     },
 }
